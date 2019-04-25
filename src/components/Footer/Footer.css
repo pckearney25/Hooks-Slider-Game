@@ -1,0 +1,40 @@
+footer {
+  background-color: #2c0b9e;
+  color: #b78700;
+  font-size: 1.1em;
+  text-align: center;
+  padding-top: 15px;
+  padding-bottom: 20px;
+  border-top: 2px solid#23097E;
+}
+
+.soc-media-div {
+  margin-top: 5px;
+}
+
+.soc-media-links {
+  margin: 0px 10px 0px 10px;
+}
+
+.fab {
+  font-size: 36px;
+  color: #b78700;
+}
+
+.hvr-grow {
+  display: inline-block;
+  vertical-align: middle;
+  transform: translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  backface-visibility: hidden;
+  -moz-osx-font-smoothing: grayscale;
+  transition-duration: 0.3s;
+  transition-property: transform;
+}
+
+.hvr-grow:hover,
+.hvr-grow:focus,
+.hvr-grow:active {
+  transform: scale(1.125);
+  color: black;
+}
