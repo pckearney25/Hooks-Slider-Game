@@ -1,68 +1,49 @@
+# Hooks Slider Game:
+
+A click game like those old plastic puzzle toys, but better.
+
+## Overview:
+
+The application was designed to mimic the plastic slider games in which a player had to order plastic tiles in numerical order. As in those games, only tiles adjacent to the the empty space can be moved. It is an updated version of the Slider Game I previously coded and which can be found at http://pckearney25.github.io/Slider-Game/. The key differecnes is at the ES6 classes used to define state in the original game have been replaces with function components using React Hooks. Additionally, from the CSS work I did on the "Garden Scroll" project http://pckearney25.github.io/Garden-Scroll/, I figured out a way to replace the 15 images used to create the picture puzzle with a single image that is manipulated with CSS.
+
+## As before:
+
+1. There are two ways to play: classic numbers or as a picture puzzle (of my dog).
+2. A timer is has been added. The timer stops when the tiles are back in order.
+3. A game can be reset at any time.
+4. Players are given messages to guide them on how to play. (These kids today.)
+
+The program was written as a personal challenge after seeing, and being inspired by, the tic-tac-toe game tutorial on the React.js site: https://reactjs.org/tutorial/tutorial.html
+
+## Challenges encountered while recoding the game included:
+
+1. A new function (arrayValuesEqual) to determine game completion had to be installed. In particular, the function now only looks at the .value portion of each object in the array.
+
+2. In order to make the timer work with Hooks, the clockRunning and intervalId variables had to be moved to state.
+
+## Authors
+
+The Slider Game presented here was coded by Patrick Kearney.
+
+## Installation
+
+Upon downloading/cloning the application from this GitHub repository, a potential user will need to install the packages outlined in the package.json file. The installation of yarn is recommended for consistent package management for recoding purposes.
+
+## Built With:
+
+JavaScript and React (https://reactjs.org/).
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+The Create-React-App package was used to build the core template structure for the app. More details on this package can be found in the Boiler README file.
+The Yarn package was used for package management of the program.
 
-In the project directory, you can run:
+The code for the tic-tac-toe React game was used as starting point but was modified extensively.
 
-### `npm start`
+## License
 
-Runs the app in the development mode.<br>
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+This project is licensed under the MIT License.
 
-The page will reload if you make edits.<br>
-You will also see any lint errors in the console.
+## Acknowledgments
 
-### `npm test`
-
-Launches the test runner in the interactive watch mode.<br>
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.<br>
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.<br>
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `npm run build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+Thanks to the folks at React.js for the starter code. And thanks to the Stack Overflow community for the new arrayValuesEqual code.
